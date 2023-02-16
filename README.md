@@ -64,7 +64,7 @@ Extract text from image file
 python3 TxtExtract.py -f /home/mkdirlove/txt.png -o output.txt
 ```
 
-#### Sample Usage #1
+#### Sample Usage #4
 
 Extract text from image url
 
