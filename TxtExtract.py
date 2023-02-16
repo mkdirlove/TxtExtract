@@ -6,7 +6,8 @@ banner = """  ______     __  ______     __                  __
  /_  __/  __/ /_/ ____/  __/ /__________ ______/ /_
   / / | |/_/ __/ __/ | |/_/ __/ ___/ __ `/ ___/ __/
  / / _>  </ /_/ /____>  </ /_/ /  / /_/ / /__/ /_  
-/_/ /_/|_|\__/_____/_/|_|\__/_/   \__,_/\___/\__/  
+/_/ /_/|_|\__/_____/_/|_|\__/_/   \__,_/\___/\__/
+           Made with <3 by @mkdirlove  
 
 """
 
@@ -15,6 +16,7 @@ print(banner)
 parser = argparse.ArgumentParser(description='TxtExtract - Extract text from an image using OCR')
 parser.add_argument('-f', '--file', type=str, help='Path to the image file to extract text from')
 parser.add_argument('-u', '--url', type=str, help='URL of the image file to extract text from')
+parser.add_argument('-o', '--output', type=str, help='Path to the output file to save the text to')
 args = parser.parse_args()
 
 if not (args.file or args.url):
@@ -40,4 +42,10 @@ else:
 
 # Parse the JSON response and print only the "text" field
 response_json = response.json()
-print(response_json["text"])
+extracted_text = response_json["text"]
+print(extracted_text)
+
+if args.output:
+    # Write the extracted text to the output file
+    with open(args.output, 'w') as f:
+        f.write(extracted_text)
