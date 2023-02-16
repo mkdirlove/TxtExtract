@@ -37,6 +37,8 @@ optional arguments:
   -h, --help            show this help message and exit
   -f FILE, --file FILE  Path to the image file to extract text from
   -u URL, --url URL     URL of the image file to extract text from
+  -o OUTPUT, --output OUTPUT
+                        Path to the output file to save the text to
 ```
 #### Sample Usage #1
 
