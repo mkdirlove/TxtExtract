@@ -43,7 +43,7 @@ optional arguments:
 Extract text from image url
 
 ```
-python3 TextExtractor.py -u https://qph.cf2.quoracdn.net/main-qimg-60dad75c0dddf8f4aa1a95040d7c3ca5-pjlq
+python3 TxtExtract.py -u https://qph.cf2.quoracdn.net/main-qimg-60dad75c0dddf8f4aa1a95040d7c3ca5-pjlq
 ```
 
 #### Sample Usage #2
@@ -51,5 +51,5 @@ python3 TextExtractor.py -u https://qph.cf2.quoracdn.net/main-qimg-60dad75c0dddf
 Extract text from image file
 
 ```
-python3 TextExtractor.py -f /home/user/Pictures/image.png
+python3 TxtExtract.py -f /home/user/Pictures/image.png
 ```
