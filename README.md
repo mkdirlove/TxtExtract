@@ -53,3 +53,19 @@ Extract text from image file
 ```
 python3 TxtExtract.py -f /home/user/Pictures/image.png
 ```
+
+#### Sample Usage #3
+
+Extract text from image file
+
+```
+python3 TxtExtract.py -f /home/mkdirlove/txt.png -o output.txt
+```
+
+#### Sample Usage #1
+
+Extract text from image url
+
+```
+python3 TxtExtract.py -u https://qph.cf2.quoracdn.net/main-qimg-60dad75c0dddf8f4aa1a95040d7c3ca5-pjlq -o output.txt
+```
